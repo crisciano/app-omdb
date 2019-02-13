@@ -1,0 +1,91 @@
+
+/** VARIAVEIS **/
+
+//branco
+$branco: #FAFAFA;
+// fundo da tela de filmes
+$cinza: #F1F2F5;
+// links e botoes
+$azul: #1199DD;
+// titulo do header
+$preto: #515163;
+// textos descritivos
+$cinza-claro: #9196AC;
+// titulo da lista de filmes
+$cinza-medio: #767E92;
+
+/** fonts **/
+$fira: 'Fira Sans', sans-serif;
+$open: 'Open Sans', sans-serif; 
+
+/** mixins **/
+@mixin shadow($shadow: 0 2px 6.65px rgba(0,0,0,0.3)){
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-o-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+.btn-padrao{
+	background: $azul;
+	color: $branco;
+	font-size: 1em;
+	padding: 9px 24px;
+	font-family: $open;
+	font-weight: 600;
+}
+
+.btn-padrao-grande{
+	background: $azul;
+	color: $branco;
+	font-size: 1em;
+	padding: 9px 24px;
+	font-family: $open;
+	font-weight: 600;
+}
+
+.title, p, span, h1,h2,h3,h4,h5,h6, td,th, b{
+	color: $preto;
+}
+p,span, b{
+	font-size: 14px;
+}
+
+#table{
+	thead, tbody{
+	@include shadow;
+		background: $branco;
+	}
+	td, th{
+		text-align: left;
+	}
+}
+
+header{
+	background: $branco;
+	padding: 24px 0;
+}
+.App{
+	background: $cinza;
+}
+.modal-content{
+	background: $cinza;
+	min-height: 450px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Fira Sans", "Open Sans",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
