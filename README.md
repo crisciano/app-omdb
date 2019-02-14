@@ -1,6 +1,6 @@
 ## Description project
 
-O projeto se trata de um app que lista filmes utilizando a api free do [OMDB](http://www.omdbapi.com/), o app utilizando React, o app tem um sistema de busca para  listar os filmes, e em seguida ver mais detalhes referentes ao fime.
+O projeto se trata de um app que lista filmes utilizando a api free do [OMDB](http://www.omdbapi.com/), o app utilizando React, o app tem um sistema de busca para  listar os filmes, e em seguida ver mais detalhes referentes ao filme.
 
 ## Run project
 
