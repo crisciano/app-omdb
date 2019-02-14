@@ -27,6 +27,18 @@ $open: 'Open Sans', sans-serif;
 	box-shadow: $shadow;
 }
 
+
+body {
+	background: $cinza;
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Fira Sans", "Open Sans",
+	sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
 .btn-padrao{
 	background: $azul;
 	color: $branco;
@@ -48,7 +60,17 @@ $open: 'Open Sans', sans-serif;
 .title, p, span, h1,h2,h3,h4,h5,h6, td,th, b{
 	color: $preto;
 }
+.title{
+	font-family: $fira;
+	font-size: 30px;
+}
+h3{
+	font-family: $open;
+	font-weight: 600;
+	font-size: 18px;
+}
 p,span, b{
+	font-family: $open;
 	font-size: 14px;
 }
 
@@ -58,6 +80,7 @@ p,span, b{
 		background: $branco;
 	}
 	td, th{
+		font-family: $open;
 		text-align: left;
 	}
 }
@@ -91,17 +114,6 @@ header{
 		z-index: 10;
 	}
 }
-
-body {
-	background: $cinza;
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Fira Sans", "Open Sans",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 
 
 code {

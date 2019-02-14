@@ -5,6 +5,7 @@ O projeto se trata de um app que lista filmes utilizando a api free do [OMDB](ht
 ## Run project
 
 ```
+	npm install
 	npm start
 ```
 
