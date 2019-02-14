@@ -8,6 +8,12 @@ O projeto se trata de um app que lista filmes utilizando a api free do [OMDB](ht
 	npm start
 ```
 
+## Build project
+
+```
+	npm build 
+```
+
 ## Install React 
 
 React [Create React App](https://github.com/facebook/create-react-app).

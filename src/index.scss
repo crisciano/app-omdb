@@ -30,7 +30,7 @@ $open: 'Open Sans', sans-serif;
 .btn-padrao{
 	background: $azul;
 	color: $branco;
-	font-size: 1em;
+	font-size: 16px;
 	padding: 9px 24px;
 	font-family: $open;
 	font-weight: 600;
@@ -39,8 +39,8 @@ $open: 'Open Sans', sans-serif;
 .btn-padrao-grande{
 	background: $azul;
 	color: $branco;
-	font-size: 1em;
-	padding: 9px 24px;
+	font-size: 16px;
+	padding: 13px 24px;
 	font-family: $open;
 	font-weight: 600;
 }
@@ -74,7 +74,26 @@ header{
 	min-height: 450px;
 }
 
+#search{
+	input{
+		// border-left: 0;
+		padding-left: 40px;
+		padding-right: 120px;
+		height: 48px;
+	}
+	.input-group-prepend{
+        position: absolute;
+		z-index: 10;
+	}
+	button{
+		position: absolute;
+		right: 0;
+		z-index: 10;
+	}
+}
+
 body {
+	background: $cinza;
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Fira Sans", "Open Sans",

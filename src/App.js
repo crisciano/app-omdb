@@ -39,19 +39,30 @@ class App extends Component {
     fetch(`${this.urlApi}?s=${query}&apikey=${this.apiKey}&plot=full`)
       .then(res=> res.json())
       .then(result=>{ 
+        if (result.Response === "True") {
+        // console.log(result);
           this.setState({
             isLoaded: true,
             filmes: result.Search,
             // loading: false
           })
+        }else{
+          this.setState({
+            isLoaded: true,
+            filmes: [{Title: ' - ', Year: ' - ', Genre: ' - ' }]
+          })
+        }
       })
-      .catch(error => console.log('error is', error));
+      .catch(error =>{ 
+        console.log('error is', error)
+        return this.state.filmes;
+      });
   }
 
   // pega os details do filme
   queryDetails(key){
     fetch(`${this.urlApi}?i=${key}&apikey=${this.apiKey}&plot=full`)
-      .then(res=> res.json())
+      .then(res=>res.json())
       .then(result=>{ 
           this.setState({
             isLoaded: true,
