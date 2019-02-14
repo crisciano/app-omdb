@@ -137,7 +137,9 @@ class App extends Component {
             <Container>
               <Row className="d-flex align-items-center">
                 <Col xs={12} md={5} className="p-0">
-                  <img src={ (this.state.details.Poster !== 'N/A')? this.state.details.Poster : require("./img/img-default.jpg") } className="img-fluid" alt={this.state.details.Title}/>
+                  <img src={ (this.state.details.Poster !== 'N/A')
+                              ? this.state.details.Poster 
+                              : require("./img/img-default.jpg") } className="img-fluid" alt={this.state.details.Title}/>
                 </Col>
                 <Col xs={12} md={7}>
                   <h3> {this.state.details.Title} </h3>
